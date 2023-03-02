@@ -1,3 +1,117 @@
-body {
-  background: red;
+body.gradient,
+div.gradient {
+  background: #eaa6c1;
 }
+
+/* HEADER */
+.section-header > sticky-header {
+  background: #eaa6c1;
+}
+.section-header > sticky-header > header {
+  width: 100%;
+  max-width: 100%;
+}
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 15px 20px;
+  margin: 0 5px;
+}
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li > a:hover span {
+  text-decoration: none;
+}
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li:nth-child(odd) {
+  background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_2_Long.png?v=1677783339);
+}
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li:nth-child(even) {
+  background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_1.png?v=1677783339);
+}
+
+/* MAIN BANER */
+.banner.banner--content-align-center {
+  overflow: hidden;
+  padding: 0 15px;
+}
+.banner.banner--content-align-center > div.banner__media {
+  padding: 15px;
+  box-sizing: border-box;
+  background: transparent;
+}
+.banner.banner--content-align-center > div.banner__media > img {
+  padding: 20px;
+  border-radius: 94px;
+  overflow: hidden;
+}
+
+/* FEATURED PRODUCTS */
+div.collection slider-component > ul > li {
+  padding: 0 10px;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__inner {
+  border-radius: 50px;
+  overflow: hidden;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content {
+  display: flex;
+  justify-content: center;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information {
+  background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_2_Long.png?v=1677783339);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 40px 50px 40px;
+  margin-top: -10px;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 a {
+  text-decoration: none;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information {
+  text-align: center;
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
+  margin-top: 0;
+  padding: 0;
+  line-height: 1em;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+/* FOOTER */
+.shopify-section-group-footer-group footer {
+  background-color: #eaa6c1;
+}
+.shopify-section-group-footer-group footer > .footer__content-top > .footer__blocks-wrapper > .footer-block > ul > li > a {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
+}
+.shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field {
+  border-bottom: 1px solid;
+}
+.shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field:after, .shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field:before {
+  display: none;
+}
+.shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field input {
+  background: transparent;
+  border: 0;
+}
+.shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=afm.css.map */
