@@ -28,6 +28,10 @@ div.gradient {
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li > a:hover span {
   text-decoration: none;
 }
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li > a span.header__active-menu-item {
+  border: 0;
+  text-decoration: none;
+}
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li:nth-child(odd) {
   background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_2_Long.png?v=1677783339);
 }
@@ -112,6 +116,44 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 .shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field input:focus {
   outline: 0;
   box-shadow: none;
+}
+
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li {
+  padding: 0 10px;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__inner {
+  border-radius: 50px;
+  overflow: hidden;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content {
+  display: flex;
+  justify-content: center;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information {
+  background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_2_Long.png?v=1677783339);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 40px 50px 40px;
+  margin-top: -10px;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > h3 a {
+  text-decoration: none;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information .card-information {
+  text-align: center;
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
+  margin-top: 0;
+  padding: 0;
+  line-height: 1em;
+  font-size: 15px;
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=afm.css.map */
