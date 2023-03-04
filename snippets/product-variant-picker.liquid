@@ -26,6 +26,9 @@
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
+        {% if option.name  == "Size" %}
+          <span class="find-size">Cant't find your size?</span>
+        {% endif %}
       {%- endfor -%}
       <script type="application/json">
         {{ product.variants | json }}
