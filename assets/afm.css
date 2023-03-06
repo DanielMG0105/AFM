@@ -1,3 +1,7 @@
+:root {
+  --line-active: #a17878;
+}
+
 body {
   font-family: "helvetica" !important;
 }
@@ -36,10 +40,22 @@ div.gradient {
   font-family: "helvetica" !important;
   font-weight: 400;
   font-style: normal;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 var(--spacing, 0px);
+  transition: margin 0.25s;
 }
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li > a span {
   font-family: inherit !important;
   font-weight: inherit;
+}
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li > a:hover {
+  --spacing: 4px;
+  --stroke: var( --line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
 }
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li > a:hover span {
   text-decoration: none;
@@ -48,11 +64,36 @@ div.gradient {
   border: 0;
   text-decoration: none;
 }
+.section-header > sticky-header > header > nav.header__inline-menu > ul > li > a > svg {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: -10px;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, transparent);
+  stroke-linecap: round;
+  stroke-width: 4px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li:nth-child(odd) {
   background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_2_Long.png?v=1677881483);
 }
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li:nth-child(even) {
   background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_1.png?v=1677881483);
+}
+.section-header > sticky-header > header > h1.header__heading > a.header__heading-link, .section-header > sticky-header > header > a.header__heading-link {
+  transition: 0.7s;
+}
+.section-header > sticky-header > header > h1.header__heading > a.header__heading-link:hover, .section-header > sticky-header > header > a.header__heading-link:hover {
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
 }
 
 /* MAIN BANER */
@@ -91,6 +132,7 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
   text-align: center;
   padding: 50px 40px 40px 40px;
   margin-top: -10px;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information {
@@ -117,6 +159,22 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 a {
   text-decoration: none;
 }
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information > svg {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: 20px;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.65s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
+}
 div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information {
   text-align: center;
 }
@@ -131,6 +189,12 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
   div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
     font-size: 11px;
   }
+}
+div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
 }
 
 /* FOOTER */
@@ -188,11 +252,28 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
   text-align: center;
   padding: 50px 40px 40px 40px;
   margin-top: -10px;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information {
     padding: 50px 30px 40px 30px;
   }
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > svg {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: 20px;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.65s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
 }
 body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
   font-size: 18px;
@@ -227,6 +308,12 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
   body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
     font-size: 11px;
   }
+}
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
 }
 
 /* PRODUCT */
