@@ -95,6 +95,21 @@ div.gradient {
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
 }
+.section-header > sticky-header > header > h1.header__heading > a.header__heading-link > img, .section-header > sticky-header > header > a.header__heading-link > img {
+  transform-origin: center center;
+  animation: interact 2s linear infinite;
+}
+@keyframes interact {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
 
 /* MAIN BANER */
 .banner.banner--content-align-center {
@@ -110,6 +125,40 @@ div.gradient {
   padding: 20px;
   border-radius: 94px;
   overflow: hidden;
+}
+
+/* SLIDESHOW */
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media {
+  background: transparent;
+}
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > img {
+  padding: 20px;
+  border-radius: 94px;
+  overflow: hidden;
+}
+slideshow-component > .slideshow__controls {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border: 0;
+}
+slideshow-component > .slideshow__controls > button {
+  color: #f9d44c;
+}
+slideshow-component > .slideshow__controls button:not([disabled]):hover {
+  color: #ff6900;
+}
+slideshow-component > .slideshow__controls > .slider-counter > .slideshow__control-wrapper > button > span {
+  border: 1px solid #f9d44c;
+}
+slideshow-component > .slideshow__controls > .slider-counter > .slideshow__control-wrapper > button:hover span {
+  background-color: #f9d44c;
+  border: 1px solid #f9d44c;
+}
+slideshow-component > .slideshow__controls > .slider-counter > .slideshow__control-wrapper > button.slider-counter__link--active > span {
+  background-color: #f9d44c;
 }
 
 /* FEATURED PRODUCTS */
