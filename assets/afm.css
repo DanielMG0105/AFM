@@ -1,9 +1,10 @@
 :root {
-  --line-active: #ff6900;
+  --line-active: #009c2e;
 }
 
 body {
   font-family: "helvetica" !important;
+  font-weight: 600;
 }
 
 body.gradient,
@@ -46,6 +47,7 @@ div.gradient {
   color: inherit;
   margin: 0 var(--spacing, 0px);
   transition: margin 0.25s;
+  font-weight: 600;
 }
 .section-header > sticky-header > header > nav.header__inline-menu > ul > li > a span {
   font-family: inherit !important;
@@ -137,11 +139,8 @@ slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > im
   overflow: hidden;
 }
 slideshow-component > .slideshow__controls {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  position: initial;
+  z-index: 3;
   border: 0;
 }
 slideshow-component > .slideshow__controls > button {
@@ -149,6 +148,44 @@ slideshow-component > .slideshow__controls > button {
 }
 slideshow-component > .slideshow__controls button:not([disabled]):hover {
   color: #ff6900;
+}
+slideshow-component > .slideshow__controls button.slideshow__autoplay {
+  display: none;
+}
+slideshow-component > .slideshow__controls > button.slider-button {
+  background: rgba(28, 40, 68, 0.9019607843);
+  border-radius: 100%;
+  transition: 0.4s ease-in;
+}
+slideshow-component > .slideshow__controls > button.slider-button > svg path {
+  stroke: #fff;
+}
+slideshow-component > .slideshow__controls > button.slider-button--prev {
+  position: absolute;
+  left: 25px;
+  top: 40%;
+}
+slideshow-component > .slideshow__controls > button.slider-button--prev svg {
+  transform: rotate(180deg);
+}
+slideshow-component > .slideshow__controls > button.slider-button--prev:hover {
+  transform: translateX(-4px);
+}
+slideshow-component > .slideshow__controls > button.slider-button--next {
+  position: absolute;
+  right: 25px;
+  top: 40%;
+}
+slideshow-component > .slideshow__controls > button.slider-button--next:hover {
+  transform: translateX(4px);
+}
+slideshow-component > .slideshow__controls > .slider-counter {
+  z-index: 3;
+}
+slideshow-component > .slideshow__controls > .slider-counter > .slideshow__control-wrapper {
+  position: absolute;
+  bottom: 4%;
+  z-index: 3;
 }
 slideshow-component > .slideshow__controls > .slider-counter > .slideshow__control-wrapper > button > span {
   border: 1px solid #f9d44c;
@@ -279,6 +316,9 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 .shopify-section-group-footer-group footer > .footer__content-top > .footer-block--newsletter > .footer-block__newsletter > form > .newsletter-form__field-wrapper > .field input:focus {
   outline: 0;
   box-shadow: none;
+}
+.shopify-section-group-footer-group footer .footer__copyright.caption > small.copyright__content:nth-child(2) {
+  display: none;
 }
 
 /* COLLECTION */
@@ -484,6 +524,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   font-size: 18px;
   text-transform: uppercase;
   font-family: "helvetica";
+  font-weight: 600;
 }
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div {
   margin: 0;
