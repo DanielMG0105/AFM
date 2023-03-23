@@ -9,12 +9,12 @@ body {
 
 body.gradient,
 div.gradient {
-  background: #eaa6c1;
+  background: #f5eee0;
 }
 
 /* HEADER */
 .section-header > sticky-header {
-  background: #eaa6c1;
+  background: #f5eee0;
 }
 .section-header > sticky-header > header {
   width: 100%;
@@ -285,7 +285,7 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 
 /* FOOTER */
 .shopify-section-group-footer-group footer {
-  background-color: #eaa6c1;
+  background-color: #f5eee0;
 }
 @media screen and (max-width: 767px) {
   .shopify-section-group-footer-group footer > .footer__content-top {
