@@ -133,14 +133,53 @@ div.gradient {
 slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media {
   background: transparent;
 }
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media:after {
+  display: none;
+}
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > a {
+  z-index: 5;
+}
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > a > img {
+  padding: 20px;
+  border-radius: 94px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 749px) {
+  slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > a > img:first-of-type {
+    display: none;
+  }
+}
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > a > img:last-of-type {
+  display: none;
+}
+@media screen and (max-width: 749px) {
+  slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > a > img:last-of-type {
+    display: block;
+  }
+}
 slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > img {
   padding: 20px;
   border-radius: 94px;
   overflow: hidden;
 }
+@media screen and (max-width: 749px) {
+  slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > img:first-of-type {
+    display: none;
+  }
+}
+slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > img:last-of-type {
+  display: none;
+}
+@media screen and (max-width: 749px) {
+  slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media > img:last-of-type {
+    display: block;
+  }
+}
 slideshow-component > .slideshow__controls {
   position: initial;
-  z-index: 3;
+  z-index: 5;
   border: 0;
 }
 slideshow-component > .slideshow__controls > button {
@@ -329,6 +368,12 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li {
   padding: 0 10px;
 }
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper:hover > .card > .card__content > .card__information {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
+}
 body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__inner {
   border-radius: 50px;
   overflow: hidden;
@@ -346,6 +391,12 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
   padding: 50px 40px 40px 40px;
   margin-top: -10px;
   position: relative;
+  /*&:hover{
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: .1s;
+    --offset: 180px;
+  }*/
 }
 @media screen and (max-width: 767px) {
   body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information {
@@ -401,12 +452,6 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
   body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
     font-size: 11px;
   }
-}
-body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information:hover {
-  --spacing: 4px;
-  --stroke: var(--line-active);
-  --stroke-delay: .1s;
-  --offset: 180px;
 }
 
 /* PRODUCT */
