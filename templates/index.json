@@ -11,7 +11,7 @@
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
-            "link": "",
+            "link": "shopify:\/\/collections",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -132,7 +132,7 @@
         "4d54c5ca-9683-41f5-9ffb-1c61d809616e": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AFM_site_background_copy_1.jpg",
+            "image": "shopify:\/\/shop_images\/AFM_site_background_copy_1_72e1ab0c-7480-4bd6-90d2-4eb3fa2de026.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
