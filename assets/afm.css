@@ -245,6 +245,12 @@ slideshow-component > .slideshow__controls > .slider-counter > .slideshow__contr
 div.collection slider-component > ul > li {
   padding: 0 10px;
 }
+div.collection slider-component > ul > li > div.card-wrapper:hover > .card > .card__content > .card__information {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
+}
 div.collection slider-component > ul > li > div.card-wrapper > .card > .card__inner {
   border-radius: 50px;
   overflow: hidden;
@@ -262,6 +268,13 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
   padding: 50px 40px 40px 40px;
   margin-top: -10px;
   position: relative;
+  /*
+  &:hover{
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: .1s;
+    --offset: 180px;
+  }*/
 }
 @media screen and (max-width: 767px) {
   div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information {
@@ -318,12 +331,6 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
   div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
     font-size: 11px;
   }
-}
-div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information:hover {
-  --spacing: 4px;
-  --stroke: var(--line-active);
-  --stroke-delay: .1s;
-  --offset: 180px;
 }
 
 /* FOOTER */
