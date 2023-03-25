@@ -157,6 +157,10 @@ slideshow-component > .slideshow__controls > button.slider-button {
   border-radius: 100%;
   transition: 0.4s ease-in;
 }
+slideshow-component > .slideshow__controls > button.slider-button > svg {
+  height: auto !important;
+  width: auto;
+}
 slideshow-component > .slideshow__controls > button.slider-button > svg path {
   stroke: #fff;
 }
