@@ -1,0 +1,25 @@
+<div class="page-width customercare">
+  <div class="grid">
+    <div class="grid__item">
+      <div class="grid__item one-quarter  small--one-whole customer-nav">
+
+        <div class="sidebar sidebar-additional">
+          <div class="title-menu-care">Customer Care</div>
+          <ul class="sidebar-customer-experience">
+            {% for link in linklists.customer-left-menu.links %}
+            {%- comment %}<locksmith:b2fb>{% endcomment -%}
+              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: linklists.customer-left-menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+            {%- comment %}</locksmith:b2fb>{% endcomment -%}
+            <li class="nav item" >{{ link.title | link_to: link.url }}</li>
+            {% endfor %}
+          </ul>
+        </div>                              
+      </div>
+
+      <div class="grid__item one-whole page__content">
+        {{ page.content }}
+      </div>
+      
+    </div>
+  </div>
+</div>
