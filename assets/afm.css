@@ -112,6 +112,37 @@ div.gradient {
     transform: rotate(2deg);
   }
 }
+.section-header > sticky-header > header > .header__icons > a > svg {
+  width: 2.1rem;
+}
+
+/* DRAWER */
+cart-drawer > .cart-drawer > .drawer__inner {
+  background-color: var(--line-active);
+}
+cart-drawer > .cart-drawer > .drawer__inner > .drawer__inner-empty {
+  background-color: var(--line-active);
+}
+cart-drawer > .cart-drawer > .drawer__inner > .drawer__inner-empty > .cart-drawer__warnings > .cart-drawer__empty-content > a.button {
+  background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Site_mock_up_3.1.23-4.png?v=1678124719);
+  border: 0;
+  background-color: transparent;
+  background-size: cover;
+  color: #000;
+  padding: 18px;
+}
+cart-drawer > .cart-drawer > .drawer__inner > .drawer__inner-empty > .cart-drawer__warnings > .cart-drawer__empty-content > a.button:before, cart-drawer > .cart-drawer > .drawer__inner > .drawer__inner-empty > .cart-drawer__warnings > .cart-drawer__empty-content > a.button:after {
+  display: none;
+}
+cart-drawer > .cart-drawer > .drawer__inner > .drawer__header {
+  background: transparent;
+}
+cart-drawer > .cart-drawer > .drawer__inner > cart-drawer-items > form > .drawer__contents > .drawer__cart-items-wrapper > table.cart-items thead {
+  background: transparent;
+}
+cart-drawer > .cart-drawer > .drawer__inner > .drawer__footer {
+  background: transparent;
+}
 
 /* MAIN BANER */
 .banner.banner--content-align-center {
@@ -560,6 +591,12 @@ body.template-product > main > section.shopify-section > section.page-width > .p
     padding-left: 0;
   }
 }
+@media screen and (max-width: 749px) {
+  body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > .product__title {
   background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Site_mock_up_3.1.23-4.png?v=1678124719);
   background-size: contain;
@@ -591,7 +628,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 }
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div product-form {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: space-between;
 }
 @media screen and (max-width: 1200px) {
@@ -636,10 +673,22 @@ body.template-product > main > section.shopify-section > section.page-width > .p
     max-width: 100%;
   }
 }
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div product-form .product-form__buttons .shopify-payment-button div[data-testid=ShopifyPay-button] {
+  width: 200px !important;
+}
+@media screen and (max-width: 749px) {
+  body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div product-form .product-form__buttons .shopify-payment-button div[data-testid=ShopifyPay-button] {
+    width: 100% !important;
+  }
+}
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div product-form .product-form__buttons .shopify-payment-button button[data-testid=sheet-open-button] {
+  display: none !important;
+}
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div product-form > a {
   text-decoration: none;
   font-size: 15px;
   color: #000;
+  margin-top: 5px;
 }
 @media screen and (max-width: 1300px) {
   body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div product-form > a {
@@ -660,6 +709,11 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 }
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div.product__description {
   margin: 0;
+}
+@media screen and (max-width: 749px) {
+  body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div.product__description {
+    order: 8;
+  }
 }
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
   display: flex;
@@ -687,6 +741,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > span.find-size {
   color: #000;
   font-size: 12px;
+  display: none;
 }
 
 /*CustomerCare*/
@@ -907,6 +962,101 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 }
 .terms-and-privacy h3 {
   font-weight: normal;
+}
+
+product-recommendations > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+product-recommendations > ul > li {
+  padding: 0 10px;
+}
+product-recommendations > ul > li > div.card-wrapper:hover > .card > .card__content > .card__information {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__inner {
+  border-radius: 50px;
+  overflow: hidden;
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content {
+  display: flex;
+  justify-content: center;
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information {
+  background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_2_Long.png?v=1677881483);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 50px 40px 40px 40px;
+  margin-top: -10px;
+  position: relative;
+  /*
+  &:hover{
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: .1s;
+    --offset: 180px;
+  }*/
+}
+@media screen and (max-width: 767px) {
+  product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information {
+    padding: 40px 30px 30px 30px;
+  }
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "helvetica" !important;
+}
+@media screen and (max-width: 767px) {
+  product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 420px) {
+  product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
+    font-size: 11px;
+  }
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 a {
+  text-decoration: none;
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > svg {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: 20px;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.65s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information {
+  text-align: center;
+}
+product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
+  margin-top: 0;
+  padding: 0;
+  line-height: 1em;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 767px) {
+  product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=afm.css.map */
