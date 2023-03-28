@@ -714,6 +714,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   .customercare > .grid-wrap > .grid__item > .customer-nav {
     margin-top: 20px;
     width: 100%;
+    max-width: 100%;
   }
 }
 .customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar .title-menu-care {
@@ -730,10 +731,15 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 .customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience li {
   margin-bottom: 5px;
   font-size: 15px;
+}
+.customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience li a {
+  color: #000;
+  text-decoration: none;
 }
 .customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience li a:hover {
   text-decoration: underline;
@@ -745,6 +751,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 @media screen and (max-width: 767px) {
   .customercare > .grid-wrap > .grid__item .page__content {
     margin-top: 0;
+    max-width: 100%;
   }
 }
 .customercare > .grid-wrap > .grid__item .page__content > h2, .customercare > .grid-wrap > .grid__item .page__content > .contact-us h2 {

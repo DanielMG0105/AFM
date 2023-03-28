@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/assets/afm.scss
+/assets/afm.css.map
