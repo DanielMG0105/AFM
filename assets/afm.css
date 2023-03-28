@@ -1059,4 +1059,76 @@ product-recommendations > ul > li > div.card-wrapper > .card > .card__content > 
   }
 }
 
+/* ABOUT */
+.wrapper--content--about {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+.wrapper--content--about > div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+@media screen and (max-width: 749px) {
+  .wrapper--content--about > div {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+.wrapper--content--about > div:before {
+  content: "";
+  display: flex;
+  width: 1px;
+  height: 50%;
+  background: #00aa18;
+  order: 2;
+  position: absolute;
+}
+@media screen and (max-width: 749px) {
+  .wrapper--content--about > div:before {
+    display: none;
+  }
+}
+.wrapper--content--about > div > div.txt {
+  flex-basis: 50%;
+  padding-right: 80px;
+  order: 1;
+}
+@media screen and (max-width: 749px) {
+  .wrapper--content--about > div > div.txt {
+    margin-bottom: 40px;
+    padding-right: 0;
+  }
+}
+.wrapper--content--about > div > div.txt > img {
+  width: 100%;
+  max-width: 100px;
+  margin: auto;
+}
+@media screen and (max-width: 980px) {
+  .wrapper--content--about > div > div.txt > img {
+    max-width: 50px;
+  }
+}
+.wrapper--content--about > div > div.txt > p {
+  text-align: left;
+  font-size: 15px;
+  line-height: 2.2rem;
+}
+@media screen and (max-width: 980px) {
+  .wrapper--content--about > div > div.txt > p {
+    font-size: 13px;
+  }
+}
+.wrapper--content--about > div > .image {
+  flex-basis: 40%;
+  order: 3;
+}
+.wrapper--content--about > div > .image > img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=afm.css.map */
