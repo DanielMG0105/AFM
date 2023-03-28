@@ -689,4 +689,217 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   font-size: 12px;
 }
 
+/*CustomerCare*/
+.customercare > .grid-wrap {
+  width: 100%;
+}
+.customercare > .grid-wrap > .grid__item {
+  display: flex;
+  padding-left: 0;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .customercare > .grid-wrap > .grid__item {
+    flex-direction: column-reverse;
+  }
+}
+.customercare > .grid-wrap > .grid__item > .customer-nav {
+  width: 100%;
+  max-width: 25%;
+  padding-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .customercare > .grid-wrap > .grid__item > .customer-nav {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar .title-menu-care {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "helvetica";
+  color: #000;
+}
+.customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience {
+  list-style: none;
+  margin: 0;
+}
+.customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience li {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.customercare > .grid-wrap > .grid__item > .customer-nav > .sidebar ul.sidebar-customer-experience li a:hover {
+  text-decoration: underline;
+}
+.customercare > .grid-wrap > .grid__item .page__content {
+  width: 100%;
+  max-width: 75%;
+}
+@media screen and (max-width: 767px) {
+  .customercare > .grid-wrap > .grid__item .page__content {
+    margin-top: 0;
+  }
+}
+.customercare > .grid-wrap > .grid__item .page__content > h2, .customercare > .grid-wrap > .grid__item .page__content > .contact-us h2 {
+  font-size: 13px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "helvetica" !important;
+  line-height: 1rem;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div p.title-contac {
+  display: flex;
+  align-items: center;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div p.title-contac .icon {
+  padding-right: 0;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect > p {
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 26px;
+  margin-bottom: 0;
+  pointer-events: none;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect > p img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect > div {
+  max-height: 0;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect > div p {
+  letter-spacing: -0.58px;
+  line-height: 30px;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect.active-toggle > p img {
+  transform: rotate(180deg);
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.accordion-effect.active-toggle > div {
+  max-height: 3000px;
+  margin: 0;
+  padding-top: 15px;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms > div:last-of-type {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms > div {
+  border-bottom: 2px solid #EAEAEA;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms > div h1 {
+  font-weight: 600;
+  font-size: 20px;
+}
+@media screen and (max-width: 749px) {
+  .customercare > .grid-wrap > .grid__item .page__content > div.terms > div h1 {
+    font-size: 20px;
+  }
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms > div h2 {
+  color: #3F2E77;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.49px;
+  line-height: 26px;
+  position: relative;
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms > div h2 img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+@media screen and (max-width: 749px) {
+  .customercare > .grid-wrap > .grid__item .page__content > div.terms > div h2 img {
+    display: block;
+  }
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms > div p {
+  letter-spacing: -0.58px;
+  line-height: 30px;
+}
+@media screen and (max-width: 749px) {
+  .customercare > .grid-wrap > .grid__item .page__content > div.terms > div.accordion p {
+    max-height: 0;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 749px) {
+  .customercare > .grid-wrap > .grid__item .page__content > div.terms .accordion.active-effect h2 {
+    cursor: pointer;
+  }
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms .accordion.active-effect h2 img {
+  transform: rotate(180deg);
+}
+.customercare > .grid-wrap > .grid__item .page__content > div.terms .accordion.active-effect p {
+  max-height: 3000px;
+  margin: 10px 0;
+}
+
+.terms-and-privacy {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  color: #000;
+}
+@media screen and (max-width: 850px) {
+  .terms-and-privacy {
+    max-width: 100%;
+  }
+}
+.terms-and-privacy p, .terms-and-privacy h1, .terms-and-privacy h2 {
+  color: #000;
+}
+.terms-and-privacy h3 {
+  font-weight: normal;
+}
+
 /*# sourceMappingURL=afm.css.map */
