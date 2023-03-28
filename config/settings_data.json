@@ -128,6 +128,12 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Sin_titulo-1q.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#f5eee0",
+    "checkout_sidebar_background_color": "#006e0f",
+    "checkout_accent_color": "#f86cd9",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
