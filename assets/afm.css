@@ -795,6 +795,17 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
   display: flex;
 }
+@media screen and (max-width: 500px) {
+  body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
+    max-width: 100% !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > legend {
+  margin-bottom: 10px;
+}
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > label {
   border-radius: 0;
   background: transparent;
@@ -802,8 +813,8 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   color: #000;
   border: 1px solid transparent;
   font-weight: 400;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   display: flex;
   padding: 0;
   align-items: center;
@@ -814,9 +825,6 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > label {
     margin: 0 10px;
   }
-}
-body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > label:before {
-  display: none;
 }
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > input {
   visibility: hidden;
