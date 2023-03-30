@@ -236,6 +236,7 @@ slideshow-component > .slideshow__controls > button.slider-button {
   transition: 0.4s ease-in;
 }
 slideshow-component > .slideshow__controls > button.slider-button > svg {
+  position: relative;
   height: auto !important;
   width: auto;
 }
