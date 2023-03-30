@@ -194,7 +194,12 @@ cart-drawer > .cart-drawer > .drawer__inner > .drawer__footer {
 
 /* SLIDESHOW */
 slideshow-component > div.slideshow {
-  min-height: 80rem;
+  min-height: 80rem !important;
+}
+@media screen and (max-width: 749px) {
+  slideshow-component > div.slideshow {
+    min-height: 70rem !important;
+  }
 }
 slideshow-component > div.slideshow > .slideshow__slide > .slideshow__media {
   background: transparent;
