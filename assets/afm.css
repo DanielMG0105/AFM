@@ -240,6 +240,7 @@ slideshow-component > .slideshow__controls > button.slider-button {
 slideshow-component > .slideshow__controls > button.slider-button > svg {
   height: auto !important;
   width: auto;
+  position: relative;
 }
 slideshow-component > .slideshow__controls > button.slider-button > svg path {
   stroke: #fff;
