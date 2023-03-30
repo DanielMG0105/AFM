@@ -273,7 +273,6 @@ slideshow-component > .slideshow__controls > button.slider-button > div.wrapper-
 }
 slideshow-component > .slideshow__controls > button.slider-button > div.wrapper-arrow > svg {
   position: relative;
-  height: auto !important;
   width: auto;
   align-self: center;
 }
