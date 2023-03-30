@@ -309,7 +309,10 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 }
 @media screen and (max-width: 767px) {
   div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information {
-    padding: 40px 30px 30px 30px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_1_aab5019e-3530-45b7-93c1-35247991fc3b.png?v=1680136281);
+    padding: 32px 11px 35px 17px;
+    margin-top: 10px;
+    margin-bottom: 33px;
   }
 }
 div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
@@ -347,6 +350,12 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
   stroke-dasharray: var(--offset, 69px) 278px;
   stroke-dashoffset: 361px;
   transition: stroke 0.65s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
+}
+@media screen and (max-width: 767px) {
+  div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information > svg {
+    width: 139px;
+    top: 0;
+  }
 }
 div.collection slider-component > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information {
   text-align: center;
@@ -441,7 +450,10 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
 }
 @media screen and (max-width: 767px) {
   body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information {
-    padding: 50px 30px 40px 30px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_1_aab5019e-3530-45b7-93c1-35247991fc3b.png?v=1680136281);
+    padding: 32px 11px 35px 17px;
+    margin-top: 10px;
+    margin-bottom: 33px;
   }
 }
 body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > svg {
@@ -459,6 +471,12 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
   stroke-dasharray: var(--offset, 69px) 278px;
   stroke-dashoffset: 361px;
   transition: stroke 0.65s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
+}
+@media screen and (max-width: 767px) {
+  body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > svg {
+    width: 139px;
+    top: 0;
+  }
 }
 body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
   font-size: 18px;
@@ -491,7 +509,8 @@ body.template-collection > main > div.shopify-section .product-grid-container > 
 }
 @media screen and (max-width: 767px) {
   body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li > div.card-wrapper > .card > .card__content > .card__information .card-information .price {
-    font-size: 11px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
 
@@ -753,6 +772,9 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 }
 
 /*CustomerCare*/
+.customercare a {
+  color: #000;
+}
 .customercare > .grid-wrap {
   width: 100%;
 }
@@ -1012,7 +1034,10 @@ product-recommendations > ul > li > div.card-wrapper > .card > .card__content > 
 }
 @media screen and (max-width: 767px) {
   product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information {
-    padding: 40px 30px 30px 30px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Tab_1_aab5019e-3530-45b7-93c1-35247991fc3b.png?v=1680136281);
+    padding: 32px 11px 35px 17px;
+    margin-top: 10px;
+    margin-bottom: 33px;
   }
 }
 product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > h3 {
@@ -1050,6 +1075,12 @@ product-recommendations > ul > li > div.card-wrapper > .card > .card__content > 
   stroke-dasharray: var(--offset, 69px) 278px;
   stroke-dashoffset: 361px;
   transition: stroke 0.65s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
+}
+@media screen and (max-width: 767px) {
+  product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information > svg {
+    width: 139px;
+    top: 0;
+  }
 }
 product-recommendations > ul > li > div.card-wrapper > .card > .card__content > .card__information .card-information {
   text-align: center;
