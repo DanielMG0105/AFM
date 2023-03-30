@@ -150,10 +150,10 @@ div.gradient {
 
 /* DRAWER */
 cart-drawer > .cart-drawer > .drawer__inner {
-  background-color: var(--line-active);
+  background-color: #f5eee0;
 }
 cart-drawer > .cart-drawer > .drawer__inner > .drawer__inner-empty {
-  background-color: var(--line-active);
+  background-color: #f5eee0;
 }
 cart-drawer > .cart-drawer > .drawer__inner > .drawer__inner-empty > .cart-drawer__warnings > .cart-drawer__empty-content > a.button {
   background-image: url(https://cdn.shopify.com/s/files/1/0730/8558/3663/files/AFM_Site_mock_up_3.1.23-4.png?v=1678124719);
