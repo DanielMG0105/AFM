@@ -792,6 +792,38 @@ body.template-product > main > section.shopify-section > section.page-width > .p
     order: 8;
   }
 }
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
+  display: flex;
+  flex: initial !important;
+}
+@media screen and (max-width: 500px) {
+  body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
+    max-width: 100% !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > legend {
+  margin-bottom: 10px;
+}
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > label {
+  border-radius: 0;
+  background: transparent;
+  font-size: 12px;
+  color: #000;
+  border: 1px solid transparent;
+  font-weight: 400;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
 @media screen and (max-width: 500px) {
   body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > label {
     margin: 0 10px;
