@@ -1005,6 +1005,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   max-width: 100%;
   margin: auto;
   color: #000;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 850px) {
   .terms-and-privacy {
