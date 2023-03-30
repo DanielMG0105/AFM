@@ -102,6 +102,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/IMG_4098_fb07a142-4dee-4580-8e04-8a9c8d2fa131.jpg",
+            "image_m": "shopify:\/\/shop_images\/IMG_4098_d339fa1f-9d73-4828-8d18-3c5cba99aac8.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -120,6 +121,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/afm_1254_3c25f814-3cae-4cac-a5c7-f25bb363f417.jpg",
+            "image_m": "shopify:\/\/shop_images\/afm_1254_b4f72c34-8ff6-4573-bf27-40b5f4d7df64.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -138,6 +140,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/AFM_site_background_copy_1_72e1ab0c-7480-4bd6-90d2-4eb3fa2de026.jpg",
+            "image_m": "shopify:\/\/shop_images\/AFM_site_background_copy_1_644e1364-9c33-4172-9634-27789a329c96.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
