@@ -28,6 +28,9 @@ div.gradient {
     padding: 20px;
   }
 }
+.section-header > sticky-header > header header-drawer > details > summary:before {
+  min-height: 89vh;
+}
 .section-header > sticky-header > header header-drawer > details > .menu-drawer {
   min-height: 89vh;
 }
