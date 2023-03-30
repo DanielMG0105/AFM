@@ -403,6 +403,9 @@ div.collection slider-component > ul > li > div.card-wrapper > .card > .card__co
 }
 
 /* COLLECTION */
+body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid {
+  justify-content: center;
+}
 body.template-collection > main > div.shopify-section .product-grid-container > div.collection ul#product-grid > li {
   padding: 0 10px;
 }
