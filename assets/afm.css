@@ -263,6 +263,9 @@ slideshow-component > .slideshow__controls > button.slider-button {
   background: rgba(28, 40, 68, 0.9019607843);
   border-radius: 100%;
   transition: 0.4s ease-in;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 slideshow-component > .slideshow__controls > button.slider-button > div.wrapper-arrow {
   width: 100%;
