@@ -13,6 +13,9 @@ div.gradient {
 }
 
 /* HEADER */
+.section-header {
+  z-index: 9 !important;
+}
 .section-header > sticky-header {
   background: #f5eee0;
 }
