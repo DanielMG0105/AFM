@@ -619,6 +619,9 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   font-family: "helvetica";
   font-weight: 600;
 }
+body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > .product__title.big {
+  padding: 47px 40px;
+}
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info > div {
   margin: 0;
 }
