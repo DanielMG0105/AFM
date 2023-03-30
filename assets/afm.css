@@ -234,6 +234,8 @@ slideshow-component > .slideshow__controls > button.slider-button {
   background: rgba(28, 40, 68, 0.9019607843);
   border-radius: 100%;
   transition: 0.4s ease-in;
+  display: flex;
+  align-items: center;
 }
 slideshow-component > .slideshow__controls > button.slider-button > svg {
   height: auto !important;
