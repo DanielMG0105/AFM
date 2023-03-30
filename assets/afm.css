@@ -813,7 +813,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   font-weight: 400;
   width: 40px;
   height: 40px;
-  display: flex;
+  display: inline-block;
   padding: 0;
   align-items: center;
   justify-content: center;
