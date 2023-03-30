@@ -277,7 +277,6 @@ slideshow-component > .slideshow__controls > button.slider-button > div.wrapper-
   position: relative;
   width: 100% !important;
   height: auto !important;
-  top: 5px;
 }
 slideshow-component > .slideshow__controls > button.slider-button > div.wrapper-arrow > svg path {
   stroke: #fff;
