@@ -206,7 +206,12 @@
           </div>
         {%- endif -%}
       </div>
-      <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'sections.slideshow.next_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'arrow-slider' %}</button>
+     
+      <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'sections.slideshow.next_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">
+        <div class="wrapper-arrow">
+          {% render 'arrow-slider' %}
+        </div>
+        </button>
 
       {%- if section.settings.auto_rotate -%}
         <button type="button" class="slideshow__autoplay slider-button no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}" aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}">
