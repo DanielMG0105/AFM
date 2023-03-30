@@ -93,27 +93,6 @@
           {%  if block.settings.button_label == blank and  block.settings.link != blank%}
           <a href="{{ block.settings.link }}">
 
-            {%- if block.settings.image -%}
-            {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
-            {{ block.settings.image | image_url: width: 3840 | image_tag:
-              loading: 'lazy',
-              height: height,
-              sizes: "100vw",
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-            }}
-          {%- else -%}
-            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-
-          {%- if block.settings.image_m -%}
-            {%- assign height = block.settings.image_m.width | divided_by: block.settings.image_m.aspect_ratio | round -%}
-            {{ block.settings.image_m | image_url: width: 3840 | image_tag:
-              loading: 'lazy',
-              height: height,
-              sizes: "100vw",
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-            }}
-          {%- else -%}
               {%- if block.settings.image -%}
               {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
               {{ block.settings.image | image_url: width: 3840 | image_tag:
@@ -125,7 +104,28 @@
             {%- else -%}
               {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
-          {%- endif -%}
+
+            {%- if block.settings.image_m -%}
+              {%- assign height = block.settings.image_m.width | divided_by: block.settings.image_m.aspect_ratio | round -%}
+              {{ block.settings.image_m | image_url: width: 3840 | image_tag:
+                loading: 'lazy',
+                height: height,
+                sizes: "100vw",
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+              }}            
+            {%- else -%}
+                {%- if block.settings.image -%}
+                {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
+                {{ block.settings.image | image_url: width: 3840 | image_tag:
+                  loading: 'lazy',
+                  height: height,
+                  sizes: "120vw",
+                  widths: '2000, 2000, 2000, 2000, 1500, 1780, 2000, 3000, 3840'
+                }}
+              {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            {%- endif -%}
           </a>
 
           {%  else  %}
@@ -149,7 +149,7 @@
             height: height,
             sizes: "100vw",
             widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-          }}
+          }}     
         {%- else -%}
             {%- if block.settings.image -%}
             {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
