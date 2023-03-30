@@ -797,7 +797,6 @@ body.template-product > main > section.shopify-section > section.page-width > .p
 }
 @media screen and (max-width: 500px) {
   body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
-    max-width: 100% !important;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
