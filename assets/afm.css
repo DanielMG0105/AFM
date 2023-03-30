@@ -268,8 +268,6 @@ slideshow-component > .slideshow__controls > button.slider-button {
   box-sizing: border-box;
 }
 slideshow-component > .slideshow__controls > button.slider-button > div.wrapper-arrow {
-  width: 100%;
-  height: 100%;
   position: relative;
   align-items: center;
 }
