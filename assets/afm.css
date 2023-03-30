@@ -792,16 +792,6 @@ body.template-product > main > section.shopify-section > section.page-width > .p
     order: 8;
   }
 }
-body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
-  display: flex;
-}
-@media screen and (max-width: 500px) {
-  body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-}
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > legend {
   margin-bottom: 10px;
 }
