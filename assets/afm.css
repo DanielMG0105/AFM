@@ -796,6 +796,7 @@ body.template-product > main > section.shopify-section > section.page-width > .p
   margin-bottom: 10px;
 }
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > label {
+  display: inline-flex;
   border-radius: 0;
   background: transparent;
   font-size: 12px;
