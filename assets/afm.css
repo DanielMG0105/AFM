@@ -826,9 +826,6 @@ body.template-product > main > section.shopify-section > section.page-width > .p
     margin: 0 10px;
   }
 }
-body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset > input {
-  visibility: hidden;
-}
 body.template-product > main > section.shopify-section > section.page-width > .product.product--large > .product__info-wrapper.grid__item > product-info variant-radios > fieldset input[type=radio]:checked + label {
   border: 3px solid #afcbf3;
   background-color: #f9d44a;
